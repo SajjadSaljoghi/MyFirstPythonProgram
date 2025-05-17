@@ -1,6 +1,7 @@
 #Calculator , There is Nothing to Say ....
 import math
 
+
 print("Please Enter Your Number 1 = ")
 number1 = float(input())
 print("Please Enter Your Number 2 = ")
@@ -55,6 +56,6 @@ elif operator == "cot":
     degree = int(input())
     radian = math.radians(degree)
     print("Cot ",degree," = ",1 / math.tan(radian))
-
+    
     
 
