@@ -8,7 +8,7 @@ def Show_WordLetterList(list):
         print(letter,end="")
 
 #---------------------------------------------
-def CheckTheGame(chance ,list):
+def CheckTheGame(chance ,wordLetterList):
     if chance == 0:
         print("\n😣 You Lose!")
         return True
@@ -18,7 +18,7 @@ def CheckTheGame(chance ,list):
     return False
 
 #-----------------------------------------------
-def CheckTheGuessLetter(guess ,word ,chance ,list):
+def CheckTheGuessLetter(guess ,chance ,wordLetterList):
     guess = guess.lower()
     if guess in randomWord :
         for i in range(len(randomWord)):
