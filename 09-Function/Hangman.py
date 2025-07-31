@@ -32,8 +32,15 @@ def CheckTheGuessLetter(guess ,word ,chance ,list):
         return chance
 
 #----------------------------------------------------
-MyWords = ["sajjad","programmer","computer","phone","mobile","mouse","laptop","keyboard","python","graphic","ram","cpu","hard"]
-randomWord = random.choice(MyWords)
+difficulty = input("Choose difficulty (Hard/Easy): ").lower()
+easyList = ['cat','dog','pen','book','eye','foot','ram','cpu','hard','easy']
+hardList = ["sajjad","programmer","computer","phone","mobile","laptop","keyboard","python","graphic"]
+#MyWords = ["sajjad","programmer","computer","phone","mobile","mouse","laptop","keyboard","python","graphic","ram","cpu","hard"]
+if difficulty == "easy":
+    word = random.choice(easyList)
+else:
+    word = random.choice(hardList)
+randomWord = word
 chance = len(randomWord)
 print("Welcome to the Game !")
 wordLetterList = ['-'] * chance
