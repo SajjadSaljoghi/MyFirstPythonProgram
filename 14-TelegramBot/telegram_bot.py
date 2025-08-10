@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 
 
-bot = telebot.TeleBot("5133473078:AAGUHhWHUZXZyFCZa3KfUjtw8y6PxamzfBQ", parse_mode=None)
+bot = telebot.TeleBot("Token", parse_mode=None)
 
 
 
